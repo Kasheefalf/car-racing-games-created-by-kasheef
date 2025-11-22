@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Car Racing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Mini Car Racing 🚗</h1>
+
+    <div class="hud">
+      <div>Score: <span id="score">0</span></div>
+      <div>Speed: <span id="speed">1</span></div>
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <div class="game-area">
+      <canvas id="game" width="360" height="640"></canvas>
+
+      <!-- overlay for game over -->
+      <div id="overlay" class="overlay hidden">
+        <div class="overlay-content">
+          <h2>Game Over</h2>
+          <p>Score: <span id="finalScore">0</span></p>
+          <button id="restartBtn">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">Use ← → arrows or touch left/right to steer. Avoid other cars!</p>
+
+    <!-- If you uploaded an image earlier, here's the local path we can attempt to use in the game code -->
+    <!-- The assistant recorded this local file path: /mnt/data/bfc285ab-a41f-4956-bc61-7c4b3d90a72d.png -->
+    <!-- The game will try to load that as a sprite; if it fails, the drawing falls back to a rectangle. -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
